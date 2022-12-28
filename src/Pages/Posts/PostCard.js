@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PostCard = ({ post }) => {
 
-    const { image, message, auther } = post;
+    const { _id, image, message, auther } = post;
+
 
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl max-w-4xl mx-auto my-4">
@@ -13,7 +15,7 @@ const PostCard = ({ post }) => {
                 <p>{auther}</p>
             </div>
             <div className="card-actions justify-end my-auto">
-                <button className="btn btn-outline">Read More</button>
+                <Link to={`/postdetails/${_id}`} className="btn btn-outline">Read More</Link>
             </div>
         </div>
     );

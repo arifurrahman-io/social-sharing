@@ -33,7 +33,7 @@ const PostBox = () => {
                         email: user.email
                     }
                     // save product info to db
-                    fetch(' http://localhost:5000/posts', {
+                    fetch(' https://social-sharing-server.vercel.app/posts', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

@@ -62,7 +62,7 @@ const SignIn = () => {
 
     const saveUser = (name, email, phone) => {
         const user = { name, email, phone }
-        fetch(`http://localhost:5000/user/${email}`, {
+        fetch(`https://social-sharing-server.vercel.app/user/${email}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

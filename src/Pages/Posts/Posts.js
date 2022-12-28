@@ -5,7 +5,7 @@ import PostCard from './PostCard';
 const Posts = () => {
 
 
-    const url = 'http://localhost:5000/posts';
+    const url = 'https://social-sharing-server.vercel.app/posts';
     const { data: posts = [] } = useQuery({
         queryKey: ['bookings'],
         queryFn: async () => {
